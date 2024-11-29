@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Iqbal NUrjaman</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script> -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+
+    <a-scene embedded arjs="detectionMode:mono_and_matrix;matrixCodeType: 3x3_PARITY65">
+
+        <a-marker type="barcode" value="29">
+            <a-box color="#FF0000" material="opacity:0.5" scale="0.5 0.5 0.5 0.5"0
+            animation__putar = "property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"
+            ></a-box>
+        </a-marker>
+
+        <a-marker type="barcode" value="30">
+            <a-circle color="#FFFFFF" material="opacity:0.5" scale="0.5 0.5 0.5 0.5"
+            animation__putar = "property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"
+            ></a-circle>
+        </a-marker>
+
+        <a-marker type="barcode" value="23">
+            <a-triangle color="#BF00FF" material="opacity:0.5" scale="0.5 0.5 0.5 0.5"0
+            animation__putar = "property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"
+            ></a-triangle>
+        </a-marker>
+
+        <a-marker type="barcode" value="21">
+            <a-cone color="#8F00FF" material="opacity:0.5" scale="0.5 0.5 0.5 0.5"0
+            animation__putar = "property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"
+            ></a-cone>
+        </a-marker>
+
+        <a-marker type="barcode" value="3">
+            <a-tetrahedron color="#808000" material="opacity:0.5" scale="0.5 0.5 0.5 0.5"0
+            animation__putar = "property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"
+            ></a-tetrahedron>
+        </a-marker>
+        
+       
+
+        <a-entity camera>
+            <a-cursor></a-cursor>
+        </a-entity>
+    </a-scene>
+    
+</body>
+</html>
